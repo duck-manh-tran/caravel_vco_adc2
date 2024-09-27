@@ -23,15 +23,15 @@ export PDK=sky130A
 ## Quick review on vco_adc2 project
 1. Show the schematic of vco_adc2
 ```bash
-cp -a $PDK_ROOT/$PDK/libs.tech/xschem/xschemrc $HOME/caravel_vco_adc2/xschem
+cp $PDK_ROOT/$PDK/libs.tech/xschem/xschemrc $HOME/caravel_vco_adc2/xschem
 cd $HOME/caravel_vco_adc2/xschem
 xschem vco_adc2.sch &
 ```
 
 2. Show the layout of vco_adc2
 ```bash
-cp -a $PDK_ROOT/$PDK/libs.tech/magic/sky130A.magicrc $HOME/caravel_vco_adc2/magic/.magicrc
-cd $HOME/caravel_vco_adc2/magic
+cp $PDK_ROOT/$PDK/libs.tech/magic/sky130A.magicrc $HOME/caravel_vco_adc2/mag/.magicrc
+cd $HOME/caravel_vco_adc2/mag
 magic vco_adc2.mag &
 ```
 
